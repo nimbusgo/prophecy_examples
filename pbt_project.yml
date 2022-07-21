@@ -1,0 +1,51 @@
+name: prophecy_examples
+description: ''
+version: 0.0.1
+author: nimbus@simpledatalabs.com
+language: scala
+buildSystem: maven
+pipelines:
+  pipelines/scd1_merge:
+    name: scd1_merge
+    description: ''
+    author: nimbus@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-07-21 00:07:59'
+    datasets:
+      inputs:
+      - 2348/datasets/customers_raw
+      - 2348/datasets/customers_scd1
+      outputs:
+      - 2348/datasets/customers_scd1
+    dependencies: {}
+datasets:
+  datasets/customers_raw:
+    name: customers_raw
+    description: ''
+    author: nimbus@simpledatalabs.com
+    createdAt: '2022-07-21 01:16:26'
+    physicalDatasets:
+      dev:
+        fabricId: 51
+        datasetType: File
+        description: ''
+        author: nimbus@simpledatalabs.com
+        createdAt: '2022-07-21 01:16:26'
+  datasets/customers_scd1:
+    name: customers_scd1
+    description: ''
+    author: nimbus@simpledatalabs.com
+    createdAt: '2022-07-21 01:17:52'
+    physicalDatasets:
+      dev:
+        fabricId: 51
+        datasetType: File
+        description: ''
+        author: nimbus@simpledatalabs.com
+        createdAt: '2022-07-21 01:17:52'
+templates: {}
+jobs: {}
+libraries: []
+subgraphs: {}
+dependencies: []
