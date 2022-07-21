@@ -1,0 +1,8 @@
+{
+  "fabricName" : "dev",
+  "j_cond" : "in0.customer_id = in1.alt_customer_id",
+  "in0_id" : "customer_id ",
+  "in1_id" : "alt_customer_id",
+  "target_state" : "NJ",
+  "s_cond" : "col(\"in0.customer_id\") === col(\"in1.alt_customer_id\")"
+}

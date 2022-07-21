@@ -19,6 +19,30 @@ pipelines:
       outputs:
       - 2348/datasets/customers_scd1
     dependencies: {}
+  pipelines/config_tests:
+    name: config_tests
+    description: ''
+    author: nimbus@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-07-21 03:37:30'
+    datasets:
+      inputs:
+      - 2348/datasets/customers_raw
+      outputs: []
+    dependencies: {}
+  pipelines/generate_incremental_data:
+    name: generate_incremental_data
+    description: ''
+    author: nimbus@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-07-21 21:29:03'
+    datasets:
+      inputs:
+      - 2348/datasets/customers_raw
+      outputs: []
+    dependencies: {}
 datasets:
   datasets/customers_raw:
     name: customers_raw
@@ -47,5 +71,11 @@ datasets:
 templates: {}
 jobs: {}
 libraries: []
-subgraphs: {}
+subgraphs:
+  subgraphs/GenerateRandomIncrement:
+    name: GenerateRandomIncrement
+    description: ''
+    author: nimbus@simpledatalabs.com
+    language: scala
+    createdAt: '2022-07-21 22:47:39'
 dependencies: []
