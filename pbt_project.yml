@@ -43,6 +43,20 @@ pipelines:
       - 2348/datasets/customers_raw
       outputs: []
     dependencies: {}
+  pipelines/generated_scd1_merge:
+    name: generated_scd1_merge
+    description: ''
+    author: nimbus@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-07-21 22:57:05'
+    datasets:
+      inputs:
+      - 2348/datasets/customers_raw
+      - 2348/datasets/customers_scd1
+      outputs:
+      - 2348/datasets/customers_scd1
+    dependencies: {}
 datasets:
   datasets/customers_raw:
     name: customers_raw
