@@ -12,8 +12,9 @@ object customers_raw {
   def apply(spark: SparkSession): DataFrame =
     spark.read
       .format("csv")
-      .option("header", true)
-      .option("sep",    ",")
+      .option("header",      true)
+      .option("inferSchema", true)
+      .option("sep",         ",")
       .load("dbfs:/databricks-datasets/retail-org/customers/customers.csv")
 
 }

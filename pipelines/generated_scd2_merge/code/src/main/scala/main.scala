@@ -17,9 +17,7 @@ object Main {
       SchemaTransform_1(spark, df_GenerateRandomIncrement_0)
     customers_scd2(spark,      df_SchemaTransform_1)
     val df_customers_scd2_1 = customers_scd2_1(spark)
-    val df_OrderBy_1        = OrderBy_1(spark,  df_customers_scd2_1)
-    val df_Filter_1         = Filter_1(spark,   df_customers_scd2_1)
-    val df_Reformat_1       = Reformat_1(spark, df_Filter_1)
+    val df_Filter_1         = Filter_1(spark, df_customers_scd2_1)
   }
 
   def main(args: Array[String]): Unit = {

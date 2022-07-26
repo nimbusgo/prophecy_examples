@@ -212,7 +212,7 @@
           "colName" : "customer_id"
         } ],
         "dedupType" : "first",
-        "columnsSelector" : [ "ET3C4sOuoNijS-ePZszHl$$AGrL13YB8OYi9_fFLv8Yi##customer_id" ],
+        "columnsSelector" : [ "ET3C4sOuoNijS-ePZszHl$$AIuVx9ppss1DWrsuQ8UT8##customer_id" ],
         "orders" : [ ],
         "useOrderBy" : false
       }
@@ -280,7 +280,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "141uBObPDoAHNTm0waa9G$$xUlslKI831g99beLU3weX##customer_name" ],
         "transformations" : [ {
           "kind" : "AddReplaceColumn",
           "AddReplaceColumn" : {
@@ -335,21 +335,21 @@
       "properties" : {
         "outports" : [ {
           "path" : "out0",
-          "id" : "ma6awrd5OJ-axbQHoDzPu$$iTzYgWH5wAFhe6vtA6Oow",
+          "id" : "ma6awrd5OJ-axbQHoDzPu$$oxRF_N3hFCCPEfJi6uqOt",
           "model" : {
             "format" : "sql",
             "expression" : "random_id = 0"
           }
         }, {
           "path" : "out1",
-          "id" : "zBTObtK58CBbhoaGaYpNX$$WTwsTdjtB4b7BESJdsvXt",
+          "id" : "zBTObtK58CBbhoaGaYpNX$$VvcsHbSvf9fIauFPjwM5z",
           "model" : {
             "format" : "sql",
             "expression" : "random_id = 1"
           }
         }, {
           "path" : "out2",
-          "id" : "zHAtLx4tFC9AD7CKkKXI1$$V2SG3qSZgJ13QS1-bVSNd",
+          "id" : "zHAtLx4tFC9AD7CKkKXI1$$U1TewxnZOI5JuXZrnQrpM",
           "model" : {
             "format" : "sql",
             "expression" : "random_id = 2"
@@ -635,7 +635,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "pHSJdzFTab6oZP3f7el5d$$RjDj4ypkLIoWGJNDNyo-8##customer_id" ],
         "transformations" : [ {
           "kind" : "AddReplaceColumn",
           "AddReplaceColumn" : {
@@ -729,7 +729,7 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
-        "columnsSelector" : [ "DFwIy_5JpWj2HdiSa70ky$$291EbXu_Qh6fqVQctzY3q##customer_id", "DFwIy_5JpWj2HdiSa70ky$$291EbXu_Qh6fqVQctzY3q##tax_id", "DFwIy_5JpWj2HdiSa70ky$$291EbXu_Qh6fqVQctzY3q##tax_code", "DFwIy_5JpWj2HdiSa70ky$$291EbXu_Qh6fqVQctzY3q##customer_name", "DFwIy_5JpWj2HdiSa70ky$$291EbXu_Qh6fqVQctzY3q##state" ],
+        "columnsSelector" : [ "DFwIy_5JpWj2HdiSa70ky$$Ke34o9ZZbWYUdSxTxcbJa##customer_id", "DFwIy_5JpWj2HdiSa70ky$$Ke34o9ZZbWYUdSxTxcbJa##tax_id", "DFwIy_5JpWj2HdiSa70ky$$Ke34o9ZZbWYUdSxTxcbJa##tax_code", "DFwIy_5JpWj2HdiSa70ky$$Ke34o9ZZbWYUdSxTxcbJa##customer_name", "DFwIy_5JpWj2HdiSa70ky$$Ke34o9ZZbWYUdSxTxcbJa##state" ],
         "expressions" : [ {
           "_row_id" : "1211746540",
           "target" : "customer_id",

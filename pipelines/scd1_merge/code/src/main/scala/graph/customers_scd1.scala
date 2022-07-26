@@ -11,11 +11,25 @@ object customers_scd1 {
 
   def apply(spark: SparkSession, in: DataFrame): Unit = {
     import _root_.io.delta.tables._
-    in.write
-      .format("delta")
-      .option("mergeSchema", true)
-      .mode("overwrite")
-      .save("dbfs:/data/tmp/customers_merge_1")
+    if (DeltaTable.isDeltaTable(spark, "dbfs:/data/tmp/customers_merge_1"))
+      DeltaTable
+        .forPath(spark, "dbfs:/data/tmp/customers_merge_1")
+        .as("target")
+        .merge(in.as("source"),
+               col("source.customer_id") === col("target.customer_id")
+        )
+        .whenMatched()
+        .updateAll()
+        .whenNotMatched()
+        .insertAll()
+        .execute()
+    else
+      in.write
+        .format("delta")
+        .option("mergeSchema",     true)
+        .option("overwriteSchema", false)
+        .mode("overwrite")
+        .save("dbfs:/data/tmp/customers_merge_1")
   }
 
 }
