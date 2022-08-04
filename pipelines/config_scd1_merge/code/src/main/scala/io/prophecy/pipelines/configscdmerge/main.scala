@@ -19,8 +19,6 @@ object Main {
     val df_Filter_1                  = Filter_1(spark, df_customers_scd1)
     val df_GenerateRandomIncrement_0 = GenerateRandomIncrement_0.apply(spark)
     Scd1Merge(spark, df_GenerateRandomIncrement_0)
-    val (df_DataValidator_1_out0, df_DataValidator_1_out1) =
-      DataValidator_1(spark, df_customers_scd1)
   }
 
   def main(args: Array[String]): Unit = {

@@ -78,12 +78,6 @@
     "sourcePort" : "1Kw4fYg0Kg_tBb8Z0xUb_$$bhxqZCfjRpRHik-5Jd9MV",
     "target" : "u2rjH4rjGE4-o4nkePwV0$$AxdvouQdDBysWK5ppI7po",
     "targetPort" : "yhx2n3_IjlIapdArGZ8Sx$$sME74qaxbGcJgAxWQxMhr"
-  }, {
-    "id" : "CmvCTMCIqpsfC8uZMDDTd",
-    "source" : "FAWPlITunFP4IjqLM74gO$$sjGT79dK-5Avyi9w9VTmi",
-    "sourcePort" : "1Kw4fYg0Kg_tBb8Z0xUb_$$bhxqZCfjRpRHik-5Jd9MV",
-    "target" : "DJw1byM9cEBj9iJulVQl_$$0wTYxHEm6UGbWFre0B7of",
-    "targetPort" : "qsILnPadu2_8KX4eEUHql$$3x94ZFk4RoVXgXEMZVPgh"
   } ],
   "processes" : {
     "FAWPlITunFP4IjqLM74gO$$sjGT79dK-5Avyi9w9VTmi" : {
@@ -710,41 +704,6 @@
         "script" : "    import _root_.io.delta.tables._\n    if (DeltaTable.isDeltaTable(spark, Config.output_path))\n      DeltaTable\n        .forPath(spark, Config.output_path)\n        .as(\"target\")\n        .merge(in.as(\"source\"),\n               Config.merge_condition\n        )\n        .whenMatched()\n        .updateAll()\n        .whenNotMatched()\n        .insertAll()\n        .execute()\n    else\n      in.write\n        .format(\"delta\")\n        .option(\"mergeSchema\",     true)\n        .option(\"overwriteSchema\", false)\n        .mode(\"overwrite\")\n        .save(Config.output_path)",
         "scriptMethodHeader" : "def apply(spark: SparkSession, in: DataFrame): Unit = {",
         "scriptMethodFooter" : "    \n}"
-      }
-    },
-    "DJw1byM9cEBj9iJulVQl_$$0wTYxHEm6UGbWFre0B7of" : {
-      "id" : "DJw1byM9cEBj9iJulVQl_$$0wTYxHEm6UGbWFre0B7of",
-      "component" : "DataValidator",
-      "metadata" : {
-        "label" : "DataValidator_1",
-        "slug" : "DataValidator_1",
-        "x" : 652.2003852031171,
-        "y" : 472,
-        "phase" : 0,
-        "cache" : false,
-        "detailedStats" : false,
-        "isImported" : false
-      },
-      "ports" : {
-        "inputs" : [ {
-          "id" : "qsILnPadu2_8KX4eEUHql$$3x94ZFk4RoVXgXEMZVPgh",
-          "slug" : "in"
-        } ],
-        "outputs" : [ {
-          "id" : "6RMNq9k65s194Jog86cAe$$vWi2a0IDguyYNflNqO6oH",
-          "slug" : "out0"
-        }, {
-          "id" : "XCkRWUBVIdfpy484ODltE$$VxF0bgKvKGOFwTYzNogj_",
-          "slug" : "out1"
-        } ],
-        "selectedInputFields" : [ ],
-        "isCustomOutputSchema" : false
-      },
-      "properties" : {
-        "activeTab" : "rules",
-        "columnsSelector" : [ ],
-        "rules" : [ ],
-        "transformations" : [ ]
       }
     }
   },
