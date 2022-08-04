@@ -28,6 +28,18 @@ pipelines:
       - 2348/datasets/customers_raw
       outputs: []
     dependencies: {}
+  pipelines/SQLOperators:
+    name: SQLOperators
+    description: ''
+    author: nimbus@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-08-04 17:30:02'
+    datasets:
+      inputs:
+      - 2348/datasets/tpch-customer
+      outputs: []
+    dependencies: {}
   pipelines/generated_scd2_merge:
     name: generated_scd2_merge
     description: ''
@@ -118,6 +130,18 @@ datasets:
         description: ''
         author: nimbus@simpledatalabs.com
         createdAt: '2022-07-21 23:11:58'
+  datasets/tpch-customer:
+    name: tpch-customer
+    description: ''
+    author: nimbus@simpledatalabs.com
+    createdAt: '2022-08-04 17:31:48'
+    physicalDatasets:
+      dev:
+        fabricId: 51
+        datasetType: File
+        description: ''
+        author: nimbus@simpledatalabs.com
+        createdAt: '2022-08-04 17:31:48'
 templates: {}
 jobs: {}
 libraries: []
