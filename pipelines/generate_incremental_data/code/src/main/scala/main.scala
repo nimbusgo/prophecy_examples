@@ -1,13 +1,14 @@
 import io.prophecy.libs._
-import org.apache.spark._
-import org.apache.spark.sql._
-import org.apache.spark.sql.functions._
-import org.apache.spark.sql.types._
 import config.ConfigStore._
+import config._
 import udfs.UDFs._
 import udfs._
 import graph._
 import graph.GenerateData
+import org.apache.spark._
+import org.apache.spark.sql._
+import org.apache.spark.sql.functions._
+import org.apache.spark.sql.types._
 
 object Main {
 
@@ -17,7 +18,6 @@ object Main {
   }
 
   def main(args: Array[String]): Unit = {
-    import config._
     ConfigStore.Config = ConfigurationFactoryImpl.fromCLI(args)
     val spark: SparkSession = SparkSession
       .builder()
@@ -26,12 +26,13 @@ object Main {
       .config("spark.sql.legacy.allowUntypedScalaUDF", "true")
       .enableHiveSupport()
       .getOrCreate()
+      .newSession()
     spark.conf.set("prophecy.metadata.pipeline.uri",
                    "2348/pipelines/generate_incremental_data"
     )
-    MetricsCollector.start(spark)
+    MetricsCollector.start(spark, "2348/pipelines/generate_incremental_data")
     apply(spark)
-    MetricsCollector.end()
+    MetricsCollector.end(spark)
   }
 
 }

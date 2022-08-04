@@ -1,13 +1,14 @@
 import io.prophecy.libs._
-import org.apache.spark._
-import org.apache.spark.sql._
-import org.apache.spark.sql.functions._
-import org.apache.spark.sql.types._
 import config.ConfigStore._
+import config._
 import udfs.UDFs._
 import udfs._
 import graph._
 import graph.GenerateRandomIncrement_0
+import org.apache.spark._
+import org.apache.spark.sql._
+import org.apache.spark.sql.functions._
+import org.apache.spark.sql.types._
 
 object Main {
 
@@ -21,7 +22,6 @@ object Main {
   }
 
   def main(args: Array[String]): Unit = {
-    import config._
     ConfigStore.Config = ConfigurationFactoryImpl.fromCLI(args)
     val spark: SparkSession = SparkSession
       .builder()
@@ -30,12 +30,13 @@ object Main {
       .config("spark.sql.legacy.allowUntypedScalaUDF", "true")
       .enableHiveSupport()
       .getOrCreate()
+      .newSession()
     spark.conf.set("prophecy.metadata.pipeline.uri",
                    "2348/pipelines/generated_scd2_merge"
     )
-    MetricsCollector.start(spark)
+    MetricsCollector.start(spark, "2348/pipelines/generated_scd2_merge")
     apply(spark)
-    MetricsCollector.end()
+    MetricsCollector.end(spark)
   }
 
 }

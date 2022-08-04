@@ -5,19 +5,16 @@ author: nimbus@simpledatalabs.com
 language: scala
 buildSystem: maven
 pipelines:
-  pipelines/scd1_merge:
-    name: scd1_merge
+  pipelines/sql_examples:
+    name: sql_examples
     description: ''
     author: nimbus@simpledatalabs.com
     mode: batch
     language: scala
-    createdAt: '2022-07-21 00:07:59'
+    createdAt: '2022-07-26 18:35:39'
     datasets:
-      inputs:
-      - 2348/datasets/customers_raw
-      - 2348/datasets/customers_scd1
-      outputs:
-      - 2348/datasets/customers_scd1
+      inputs: []
+      outputs: []
     dependencies: {}
   pipelines/generate_incremental_data:
     name: generate_incremental_data
@@ -70,6 +67,19 @@ pipelines:
       - 2348/datasets/customers_scd1
       outputs:
       - 2348/datasets/customers_scd1
+    dependencies: {}
+  pipelines/config_scd1_merge:
+    name: config_scd1_merge
+    description: ''
+    author: nimbus@simpledatalabs.com
+    mode: batch
+    language: scala
+    createdAt: '2022-08-01 18:31:13'
+    datasets:
+      inputs:
+      - 2348/datasets/customers_raw
+      - 2348/datasets/customers_scd1
+      outputs: []
     dependencies: {}
 datasets:
   datasets/customers_raw:

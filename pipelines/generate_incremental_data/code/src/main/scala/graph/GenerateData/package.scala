@@ -14,11 +14,12 @@ package object GenerateData {
     val df_AddRandomID      = AddRandomID(spark,      df_DedupeCustomerId)
     val (df_Split3_out0, df_Split3_out1, df_Split3_out2) =
       Split3(spark, df_AddRandomID)
-    val df_shift_ids    = shift_ids(spark,    df_Split3_out1)
-    val df_random_edits = random_edits(spark, df_Split3_out2)
-    val df_Union        = Union(spark,        df_Split3_out0, df_shift_ids, df_random_edits)
-    val df_DropRandomId = DropRandomId(spark, df_Union)
-    df_DropRandomId
+    val df_shift_ids          = shift_ids(spark,          df_Split3_out1)
+    val df_random_edits       = random_edits(spark,       df_Split3_out2)
+    val df_Union              = Union(spark,              df_Split3_out0, df_shift_ids, df_random_edits)
+    val df_DropRandomId       = DropRandomId(spark,       df_Union)
+    val df_DedupeCustomerId_1 = DedupeCustomerId_1(spark, df_DropRandomId)
+    df_DedupeCustomerId_1
   }
 
 }

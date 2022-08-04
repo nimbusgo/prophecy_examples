@@ -67,7 +67,6 @@
         "slug" : "GenerateData",
         "x" : 573,
         "y" : 76,
-        "language" : "scala",
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
@@ -83,74 +82,80 @@
         "isCustomOutputSchema" : false
       },
       "properties" : {
+        "packageName" : "public_datasets",
         "externalId" : "2348/subgraphs/GenerateRandomIncrement",
-        "name" : "GenerateRandomIncrement",
-        "packageName" : "public_datasets"
+        "name" : "GenerateRandomIncrement"
       },
       "connections" : [ {
-        "id" : "YSa0f8IUlpHEtIq9a1AB6",
+        "id" : "frwHAK32xnJ4b_CxsJNGr",
         "source" : "-LFshHVZnkmWY_hzIPBpB$$qeF6QDEVpTIZMVpg2kmWx",
         "sourcePort" : "OKqOKJFLlr29QSXbbkEBh$$_IxVEWRa5NBTuKuK6Ytk0",
         "target" : "nU4g6wd5jr5JhJ6huRXht$$KkdbcwJBEBB_QfDdsOh-H",
         "targetPort" : "wL7xXDYEWEKcCr_1NaY6I$$bC96WLz9fbMBP_hakUmkN"
       }, {
-        "id" : "mTSWDk1mdFkNLUckh44G5",
+        "id" : "STflCGdgiodiDsujJ_s45",
         "source" : "GSaRAfkoyndu600SdhN3G$$d3YKvsPJaxbVkmhM1GqL8",
         "sourcePort" : "ETt9z_O1lK2yqT5eWn8iC$$S2ss2b8tpuiDI4wyFcofp",
         "target" : "0WxQKBya4jSUH1Z6hdXAU$$oL-r9yEy7JMD7WP1_FZ3-",
         "targetPort" : "DFwIy_5JpWj2HdiSa70ky$$291EbXu_Qh6fqVQctzY3q"
       }, {
-        "id" : "0VMTwPc1z_-j96c8z5A-C",
+        "id" : "-ylW6VoAJhyE8IDNffARA",
         "source" : "0WxQKBya4jSUH1Z6hdXAU$$oL-r9yEy7JMD7WP1_FZ3-",
         "sourcePort" : "l4E5b8uOkD-kOot3dbY_E$$7ua7U2AcrVnd8sy3idaS6",
         "target" : "-LFshHVZnkmWY_hzIPBpB$$qeF6QDEVpTIZMVpg2kmWx",
         "targetPort" : "ET3C4sOuoNijS-ePZszHl$$AGrL13YB8OYi9_fFLv8Yi"
       }, {
-        "id" : "3HrEa7JTPACBFblgvvnZY",
+        "id" : "9kPN2F47qo5-4r4NI4e9M",
         "source" : "nU4g6wd5jr5JhJ6huRXht$$KkdbcwJBEBB_QfDdsOh-H",
         "sourcePort" : "flc4zri3S9v28LCN-M8bc$$mdmM5LE_VoHxLuLBOJ7sV",
         "target" : "_soR6L2kZarA6gN2dE5fk$$43dZKsWicC0FAkrSG29k4",
         "targetPort" : "8t9MWdX0M2YMNB85b5Fmv$$INrG7t14-NNR1IAH1TKxW"
       }, {
-        "id" : "sN78yAWhkb_Xm90XCJzIu",
+        "id" : "xl1QPznm16kdwGKJVKbQZ",
         "source" : "_soR6L2kZarA6gN2dE5fk$$43dZKsWicC0FAkrSG29k4",
         "sourcePort" : "ma6awrd5OJ-axbQHoDzPu$$iTzYgWH5wAFhe6vtA6Oow",
         "target" : "1gb0_WDxmtxekDpT2ueRN$$o6Ks_nYR6KRhfHn_DtcPz",
         "targetPort" : "TIo2rvLCeORS6lCbcvOF8$$-7gmYO7kkuHln8_TSmZ3V"
       }, {
-        "id" : "Z-7-VEKR-FG4buboa-Dnh",
+        "id" : "joPhKIy840vRHMqILtajt",
         "source" : "_soR6L2kZarA6gN2dE5fk$$43dZKsWicC0FAkrSG29k4",
         "sourcePort" : "zBTObtK58CBbhoaGaYpNX$$WTwsTdjtB4b7BESJdsvXt",
         "target" : "t9lTKGbVWkGE-fx8K9O3w$$9kanik35w8VVAXuzw47x0",
         "targetPort" : "pHSJdzFTab6oZP3f7el5d$$gifuXjc3Dq0v2krkYNgT9"
       }, {
-        "id" : "WJyn5Au3nFW64J7tJ5Y3f",
+        "id" : "2ZmHla1LVU9fBBnPKAMW7",
         "source" : "t9lTKGbVWkGE-fx8K9O3w$$9kanik35w8VVAXuzw47x0",
         "sourcePort" : "jvZsjqtqNip4_w_uQYBgH$$uYiCIgNU4soUIPv499wyY",
         "target" : "1gb0_WDxmtxekDpT2ueRN$$o6Ks_nYR6KRhfHn_DtcPz",
         "targetPort" : "DMxbpPi3BRLzyyjXlxA1c$$rq_NH0qQTyztTJwhDgSMB"
       }, {
-        "id" : "z-t2AfYQu52D5swp4Udim",
+        "id" : "7PM3PZeAX0YYVcj6jkxjX",
         "source" : "_soR6L2kZarA6gN2dE5fk$$43dZKsWicC0FAkrSG29k4",
         "sourcePort" : "zHAtLx4tFC9AD7CKkKXI1$$V2SG3qSZgJ13QS1-bVSNd",
         "target" : "ZLIkdPDMkNVpuvQe1VXmZ$$TLhld7T4jhH920tmXwXwJ",
         "targetPort" : "141uBObPDoAHNTm0waa9G$$Y-56OHU-vEQZ0VezuPoMD"
       }, {
-        "id" : "nq_s43wwjof2Ac2aXB4yY",
+        "id" : "jMNXWY38fFFv2u63mnzQG",
         "source" : "ZLIkdPDMkNVpuvQe1VXmZ$$TLhld7T4jhH920tmXwXwJ",
         "sourcePort" : "TzAAUPc-GO2uyL01EYfCM$$TlyL8sEby2dwigXu21OQp",
         "target" : "1gb0_WDxmtxekDpT2ueRN$$o6Ks_nYR6KRhfHn_DtcPz",
         "targetPort" : "Q_dKDX7VxQcbedvoxyi1n$$VJWcdOPijFtfMEjQYoHJ-"
       }, {
-        "id" : "3vM4DsyH1n3yxiy7dvGY6",
+        "id" : "4dIa97x5n3ZPplmWAXgs9",
         "source" : "1gb0_WDxmtxekDpT2ueRN$$o6Ks_nYR6KRhfHn_DtcPz",
         "sourcePort" : "2rWzOGBgqsI62EA5mFXkf$$Jf3jVzWHw9Uuq-Sm2LbZd",
         "target" : "7M_XGNsOGVEXdv-UZPyCk$$JdcENttvHP6xR9jLgN0vA",
         "targetPort" : "VYjxOFvxinOiHmp-nD9_h$$i3U8N2vi791Xe5D2jyfk3"
       }, {
-        "id" : "y-Br806O_5v7rhn8-fw-d",
+        "id" : "c2C7JBos-cMs29V_iPbaQ",
         "source" : "7M_XGNsOGVEXdv-UZPyCk$$JdcENttvHP6xR9jLgN0vA",
         "sourcePort" : "HSEs4rmYHmSmurEujIfc-$$3ErE9C4mmZ_4Vf8UsJ4jL",
+        "target" : "A2RXlv5HPLh2Go_7d0C3e$$A3QV5y0lJfDGItnTJn2ur",
+        "targetPort" : "VezQElhhhy2DOD9fElQUo$$Rsi61Utfv8zOpr1rcv92S"
+      }, {
+        "id" : "E8FC2RM2zgIyLPYN5qpaQ",
+        "source" : "A2RXlv5HPLh2Go_7d0C3e$$A3QV5y0lJfDGItnTJn2ur",
+        "sourcePort" : "9FGuehATHf1fTMbJ5kbqz$$5mpgEB5Q0LwJOx9-JOVdK",
         "target" : "PK8j_gbloS6xt-pheE3vh$$aNWErmYjvPi68ET7afHQf",
         "targetPort" : "Y74EDzK1xvKUd_Mhh7n43$$DOkxo4UJpcK5j9wRyLN4U"
       } ],
@@ -161,9 +166,8 @@
           "metadata" : {
             "label" : "Split3",
             "slug" : "Split3",
-            "x" : 940.000144907495,
-            "y" : 140,
-            "language" : "scala",
+            "x" : 1040.000144907495,
+            "y" : 240,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -190,21 +194,21 @@
           "properties" : {
             "outports" : [ {
               "path" : "out0",
-              "id" : "ma6awrd5OJ-axbQHoDzPu$$iTzYgWH5wAFhe6vtA6Oow",
+              "id" : "ma6awrd5OJ-axbQHoDzPu$$oxRF_N3hFCCPEfJi6uqOt",
               "model" : {
                 "format" : "sql",
                 "expression" : "random_id = 0"
               }
             }, {
               "path" : "out1",
-              "id" : "zBTObtK58CBbhoaGaYpNX$$WTwsTdjtB4b7BESJdsvXt",
+              "id" : "zBTObtK58CBbhoaGaYpNX$$VvcsHbSvf9fIauFPjwM5z",
               "model" : {
                 "format" : "sql",
                 "expression" : "random_id = 1"
               }
             }, {
               "path" : "out2",
-              "id" : "zHAtLx4tFC9AD7CKkKXI1$$V2SG3qSZgJ13QS1-bVSNd",
+              "id" : "zHAtLx4tFC9AD7CKkKXI1$$U1TewxnZOI5JuXZrnQrpM",
               "model" : {
                 "format" : "sql",
                 "expression" : "random_id = 2"
@@ -218,9 +222,8 @@
           "metadata" : {
             "label" : "shift_ids",
             "slug" : "shift_ids",
-            "x" : 1142.0001560010307,
-            "y" : 227,
-            "language" : "scala",
+            "x" : 1242.0001560010307,
+            "y" : 327,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -239,7 +242,7 @@
             "isCustomOutputSchema" : false
           },
           "properties" : {
-            "columnsSelector" : [ ],
+            "columnsSelector" : [ "pHSJdzFTab6oZP3f7el5d$$RjDj4ypkLIoWGJNDNyo-8##customer_id" ],
             "transformations" : [ {
               "kind" : "AddReplaceColumn",
               "AddReplaceColumn" : {
@@ -259,15 +262,49 @@
             } ]
           }
         },
+        "A2RXlv5HPLh2Go_7d0C3e$$A3QV5y0lJfDGItnTJn2ur" : {
+          "id" : "A2RXlv5HPLh2Go_7d0C3e$$A3QV5y0lJfDGItnTJn2ur",
+          "component" : "Deduplicate",
+          "metadata" : {
+            "label" : "DedupeCustomerId_1",
+            "slug" : "DedupeCustomerId_1",
+            "x" : 1775.00054026842,
+            "y" : 240,
+            "phase" : 0,
+            "cache" : false,
+            "detailedStats" : false,
+            "isImported" : false
+          },
+          "ports" : {
+            "inputs" : [ {
+              "id" : "VezQElhhhy2DOD9fElQUo$$Rsi61Utfv8zOpr1rcv92S",
+              "slug" : "in"
+            } ],
+            "outputs" : [ {
+              "id" : "9FGuehATHf1fTMbJ5kbqz$$5mpgEB5Q0LwJOx9-JOVdK",
+              "slug" : "out"
+            } ],
+            "selectedInputFields" : [ ],
+            "isCustomOutputSchema" : false
+          },
+          "properties" : {
+            "dedupColumns" : [ {
+              "colName" : "customer_id"
+            } ],
+            "dedupType" : "first",
+            "columnsSelector" : [ "VezQElhhhy2DOD9fElQUo$$73QYHr5HlM9swNsxmm-Yh##customer_id" ],
+            "orders" : [ ],
+            "useOrderBy" : false
+          }
+        },
         "1gb0_WDxmtxekDpT2ueRN$$o6Ks_nYR6KRhfHn_DtcPz" : {
           "id" : "1gb0_WDxmtxekDpT2ueRN$$o6Ks_nYR6KRhfHn_DtcPz",
           "component" : "SetOperation",
           "metadata" : {
             "label" : "Union",
             "slug" : "Union",
-            "x" : 1340.000486000446,
-            "y" : 140,
-            "language" : "scala",
+            "x" : 1440.000486000446,
+            "y" : 240,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -301,9 +338,8 @@
           "metadata" : {
             "label" : "SelectFields",
             "slug" : "SelectFields",
-            "x" : 340.000388767542,
-            "y" : 140,
-            "language" : "scala",
+            "x" : 440.000388767542,
+            "y" : 240,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -322,7 +358,7 @@
             "isCustomOutputSchema" : false
           },
           "properties" : {
-            "columnsSelector" : [ "DFwIy_5JpWj2HdiSa70ky$$291EbXu_Qh6fqVQctzY3q##customer_id", "DFwIy_5JpWj2HdiSa70ky$$291EbXu_Qh6fqVQctzY3q##tax_id", "DFwIy_5JpWj2HdiSa70ky$$291EbXu_Qh6fqVQctzY3q##tax_code", "DFwIy_5JpWj2HdiSa70ky$$291EbXu_Qh6fqVQctzY3q##customer_name", "DFwIy_5JpWj2HdiSa70ky$$291EbXu_Qh6fqVQctzY3q##state" ],
+            "columnsSelector" : [ "DFwIy_5JpWj2HdiSa70ky$$Ke34o9ZZbWYUdSxTxcbJa##customer_id", "DFwIy_5JpWj2HdiSa70ky$$Ke34o9ZZbWYUdSxTxcbJa##tax_id", "DFwIy_5JpWj2HdiSa70ky$$Ke34o9ZZbWYUdSxTxcbJa##tax_code", "DFwIy_5JpWj2HdiSa70ky$$Ke34o9ZZbWYUdSxTxcbJa##customer_name", "DFwIy_5JpWj2HdiSa70ky$$Ke34o9ZZbWYUdSxTxcbJa##state" ],
             "expressions" : [ {
               "target" : "customer_id",
               "expression" : {
@@ -367,9 +403,8 @@
           "metadata" : {
             "label" : "random_edits",
             "slug" : "random_edits",
-            "x" : 1141.0004259608047,
-            "y" : 366,
-            "language" : "scala",
+            "x" : 1241.0004259608047,
+            "y" : 466,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -388,7 +423,7 @@
             "isCustomOutputSchema" : false
           },
           "properties" : {
-            "columnsSelector" : [ ],
+            "columnsSelector" : [ "141uBObPDoAHNTm0waa9G$$xUlslKI831g99beLU3weX##customer_name" ],
             "transformations" : [ {
               "kind" : "AddReplaceColumn",
               "AddReplaceColumn" : {
@@ -414,9 +449,8 @@
           "metadata" : {
             "label" : "customers_raw",
             "slug" : "customers_raw",
-            "x" : 140.0000673177234,
-            "y" : 140,
-            "language" : "scala",
+            "x" : 240.0000673177234,
+            "y" : 240,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -441,9 +475,8 @@
           "metadata" : {
             "label" : "AddRandomID",
             "slug" : "AddRandomID",
-            "x" : 740.0004162864619,
-            "y" : 140,
-            "language" : "scala",
+            "x" : 840.0004162864619,
+            "y" : 240,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -488,9 +521,8 @@
           "metadata" : {
             "label" : "DropRandomId",
             "slug" : "DropRandomId",
-            "x" : 1540.0006623756515,
-            "y" : 140,
-            "language" : "scala",
+            "x" : 1622.0006623756515,
+            "y" : 240,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -509,7 +541,7 @@
             "isCustomOutputSchema" : false
           },
           "properties" : {
-            "columnsSelector" : [ ],
+            "columnsSelector" : [ "VYjxOFvxinOiHmp-nD9_h$$r68edd_kmrKjBOhb07BVo##random_id" ],
             "transformations" : [ {
               "kind" : "DropColumn",
               "DropColumn" : {
@@ -535,9 +567,8 @@
           "metadata" : {
             "label" : "DedupeCustomerId",
             "slug" : "DedupeCustomerId",
-            "x" : 540.00054026842,
-            "y" : 140,
-            "language" : "scala",
+            "x" : 640.00054026842,
+            "y" : 240,
             "phase" : 0,
             "cache" : false,
             "detailedStats" : false,
@@ -560,7 +591,7 @@
               "colName" : "customer_id"
             } ],
             "dedupType" : "first",
-            "columnsSelector" : [ "ET3C4sOuoNijS-ePZszHl$$AGrL13YB8OYi9_fFLv8Yi##customer_id" ],
+            "columnsSelector" : [ "ET3C4sOuoNijS-ePZszHl$$AIuVx9ppss1DWrsuQ8UT8##customer_id" ],
             "orders" : [ ],
             "useOrderBy" : false
           }
@@ -575,7 +606,6 @@
         "slug" : "Filter_2",
         "x" : 893.800261918082,
         "y" : 91.30000000000001,
-        "language" : "scala",
         "phase" : 0,
         "cache" : false,
         "detailedStats" : false,
